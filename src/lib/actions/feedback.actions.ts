@@ -1,5 +1,4 @@
 "use server";
-import AppFeedback from "@/components/feedback/AppFeedback";
 import { db } from "@/utils/db";
 import { chatSession } from "@/utils/geminiai";
 import { ApplicationFeedBack, Feedback, MockInterview, User } from "@/utils/schema";
