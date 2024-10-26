@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "InterroAI",
     description: "AI Mock Interviewer",
     icons: {
-        icon: "https://hrk-boutique.s3.ap-south-1.amazonaws.com/Interro.AI.png",
+        icon: "https://myapplication-logos.s3.ap-south-1.amazonaws.com/InterroAI.svg",
     },
 };
 

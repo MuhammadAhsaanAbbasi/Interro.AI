@@ -11,14 +11,14 @@ const Footer = () => {
     return (
         <footer className='border-t px-6 sm:px-12 md:px-18 py-2 flex flex-col md:flex-row justify-between items-center gap-3'>
             <Link href={"/"}
-                className='flex items-center'
+                className='flex items-center gap-1'
             >
                 <Image
-                    src={"https://hrk-boutique.s3.ap-south-1.amazonaws.com/Interro.AI.png"}
+                    src={"https://myapplication-logos.s3.ap-south-1.amazonaws.com/InterroAI.svg"}
                     alt='InterroAI'
                     width={80}
                     height={80}
-                    className='w-20 h-auto md:w-auto'
+                    className='w-16 h-16'
                     priority
                 />
                 <span className='text-2xl font-bold text-primary'>Interro.AI</span>
