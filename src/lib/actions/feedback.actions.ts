@@ -2,7 +2,7 @@
 import { db } from "@/utils/db";
 import { chatSession } from "@/utils/geminiai";
 import { ApplicationFeedBack, Feedback, MockInterview, User } from "@/utils/schema";
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 import moment from "moment";
 
 export const generatefeedback = async (values: feedbackGenerateParams) => {
@@ -90,7 +90,7 @@ export const generateAppfeedback = async (values: AppfeedbackGenerateParams ) =>
 export const getAppfeedback = async () => {
     try {
             const response = await db.select()
-                .from(ApplicationFeedBack).orderBy(ApplicationFeedBack.id);
+                .from(ApplicationFeedBack).orderBy(desc(ApplicationFeedBack.id));
             
             if (!response) {
                 return { error: "Something went wrong to submitting a feedback" }
